@@ -1,0 +1,11 @@
+
+x = 'KING IN THE NORTH'
+print('Welcome to the word lottory.\nThe lottory word is :', x)
+x= x.lower()
+inp = input("To Win the Lottory,\nChoose the correct Letter from the above word: ").lower()
+s_inp = x.find(inp[0])
+
+if (x[s_inp] == x[0]) or (x[s_inp] == x[3]) or (x[s_inp] == x[10]) or (x[s_inp] == x[13]):
+    print("Congratulations !\nYou Won the Lottory Price.")
+else:
+    print("Bad Luck!\nYou didn't Win the Lottory.")
